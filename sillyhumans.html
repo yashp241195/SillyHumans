@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Silly Humans</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+  
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+
+<script src="data/members.js"></script> 
+
+<script>
+
+    var questionList=[]
+    allmembers.map(item=>{
+        const {name, description, tags, headline, dp, email, linkedin, instagram, portfolio} = item
+        questionList.push({q:name,a:description,t:tags,hl:headline, 
+          dp:dp, em:email, li:linkedin, ins:instagram, pf:portfolio
+        }) 
+    })
+
+    const questionItemWrap = (item,i) => {
+        const {q, a, t, hl, dp, em, li,ins, pf} = item
+
+        const showEmail = (em =="#")?"":"<b>email</b>: "+em+"<br>"
+        
+        const showLinkedIn = (li =="#")?"":" <b> <a target=\"_blank\" href="+li+">linkedIn</a></b> "
+        const showInsta = (ins =="#")?"":" <b> <a target=\"_blank\" href="+ins+">instagram</a></b> "
+        const showPortfolio = (pf =="#")?"":" <b> <a target=\"_blank\" href="+pf+">portfolio</a></b> "
+
+        const result = "<li><q style=\"visibility: hidden;\">query:"
+            +q+""+"</q>"+"<t style=\"visibility: hidden;\">tags:"
+            +t+"</t>"+"<button class=\"accordion\">"+
+              "<div style=\"display:flex;\"><div style=\"padding:5px;\"><img style=\"border-radius:50%;\" src="+dp+" alt="+q+" width=\"70\" height=\"70\"></div>"+
+              "<div><b>"+" " +q+"</b><br> <i> "+hl+" </i> <br> <b>tags:"
+              +t+" </b><br>"+showEmail + showLinkedIn + showInsta + showPortfolio
+              +"</div></div></button><div class=\"panel\"><p><a>"
+              +a+"</a></p></div></li>"
+        return result
+    }
+
+    const tagWrap = (item) =>"<a href=\"#\" class=\"mytagg\">"+item+"</a>"
+
+    const extractTags = (questionList) => {
+      var listofalltags = []
+      for(let i = 0; i < questionList.length; i++){
+        const ql = questionList[i];
+        listofalltags.push(...ql.t.split(" "))
+      }
+      const newarray = [ ...new Set(listofalltags) ]
+      return " "+newarray.map(item => tagWrap(item)).reduce((result, item)=> result+" "+item+" ")+" "
+    }
+
+    const hashSearch = (main, search) => {
+      let main_arr = main.toLowerCase().trim().split(" ")
+      let search_arr = search.toLowerCase().trim().split(" ")
+      let count = 0;
+      for(let i=0;i<main_arr.length;i++){
+        for(let j=0;j<search_arr.length;j++){
+          if(main_arr[i] == search_arr[j])
+          {count++;}
+        }
+      }
+      return (count == search_arr.length)?1:-1
+    }
+
+    const querySearch = (main, search) => {
+      let main_arr = main.toLowerCase().trim().split(" ")
+      let search_arr = search.toLowerCase().trim().split(" ")
+      let count = 0;
+      for(let i=0;i<main_arr.length;i++){
+        for(let j=0;j<search_arr.length;j++){
+          if(main_arr[i] == search_arr[j])
+            {count++;}
+        }
+      }
+      return count>0
+    }
+
+    $(document).ready(function(){
+      $("#alltags").html("<br>Tags: "+extractTags(questionList)+"<br>")
+      $('input[name="group1"]').click(function(){$("#myInput").val($('input[name="group1"]:checked').val())})
+      $("#myList").html(questionList.map((item,i)=>questionItemWrap(item,i)).reduce((result, item)=> result+item))
+      $("li").click(function(){$(this).children("div").toggle()})
+      
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase()
+        $("#myList li").filter(function() {
+            $(this).toggle(hashSearch($(this).children("t").text().slice(5).toLowerCase(),value.slice(5)) > -1
+            || querySearch($(this).children("q").text().slice(6).toLowerCase(),value.slice(6))
+            )          
+        });
+      });
+      $(".mytagg").click(function(){
+        $("input[name=group1][value='tags:']").prop("checked",true);
+        $("#myInput").val("tags:"+this.text)
+        var e2 = $.Event( "keyup", { keyCode: 13 } );
+        $('#myInput').trigger(e2);
+      })
+
+      $("input[name=group1]").change(function(){
+        if($(this).val() == 'all:'){
+          $("#myList li").filter(function(){
+            $(this).toggle(true)
+          })
+        }
+      })
+
+    });
+</script>
+
+</head>
+<body>
+<div style="padding-left: 50px;">
+    <div style="display:flex;">
+      <h2>Silly Humans Members</h2>
+    </div>	
+    <p>
+      <i>
+        Welcome to Silly Humans.
+      </i>
+    </p>
+    <input id="myInput" style="width: 400px;" type="text" value="name: " placeholder="Search ..">
+    <br><br><input type="radio" value="name: " name="group1" checked>name
+    <input type="radio" value="tags:" name="group1">tags
+    <input type="radio" value="all:" name="group1">all
+
+    <div style="width: 600px;" id="alltags"></div>
+</div>
+<ul id="myList" style="list-style: none; width: 600px;"></ul>
+<br>
+</body>
+</html>
