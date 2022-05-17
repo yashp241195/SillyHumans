@@ -7,9 +7,7 @@ const app = express()
 // app.use(cors())
 app.use(morgan('dev'));
 app.use(bodyParser.json()); // for json data
-// app.use(bodyParser.urlencoded({ extended: true })) // for form data
 app.use(express.static("public"))
-
 
 const PORT = process.env.PORT || 3005 
 
