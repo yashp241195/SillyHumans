@@ -46,15 +46,16 @@
         const {q, a, t, hl, dp, em, li,ins, pf} = item
 
         const showEmail = (em =="#")?"":"<b>email</b>: "+em+"<br>"
-        
         const showLinkedIn = (li =="#")?"":" <b> <a target=\"_blank\" href="+li+">linkedIn</a></b> "
         const showInsta = (ins =="#")?"":" <b> <a target=\"_blank\" href="+ins+">instagram</a></b> "
         const showPortfolio = (pf =="#")?"":" <b> <a target=\"_blank\" href="+pf+">portfolio</a></b> "
 
+        const dpUrl = (dp == "")?"profile.jpg":dp
+
         const result = "<li><q style=\"visibility: hidden;\">query:"
             +q+""+"</q>"+"<t style=\"visibility: hidden;\">tags:"
             +t+"</t>"+"<button class=\"accordion\">"+
-              "<div style=\"display:flex;\"><div style=\"padding:5px;\"><img style=\"border-radius:50%;\" src="+dp+" alt="+q+" width=\"70\" height=\"70\"></div>"+
+              "<div style=\"display:flex;\"><div style=\"padding:5px;\"><img style=\"border-radius:50%;\" src="+dpUrl+" alt="+q+" width=\"70\" height=\"70\"></div>"+
               "<div><b>"+" " +q+"</b><br> <i> "+hl+" </i> <br> <b>tags:"
               +t+" </b><br>"+showEmail + showLinkedIn + showInsta + showPortfolio
               +"</div></div></button><div class=\"panel\"><p><a>"
@@ -137,6 +138,9 @@
 <div style="padding-left: 50px;">
     <div style="display:flex;">
       <h2>Silly Humans Members</h2>
+    </div>
+    <div>
+      <a target="_blank" href="https://forms.gle/1GWxgbRcpdSriavU6">Click here</a> to submit your details  
     </div>	
     <p>
       <i>
