@@ -31,7 +31,7 @@ var allmembers = [
     "linkedin": "https://www.linkedin.com/in/aishwaryadey24/", 
     "portfolio": "https://linktr.ee/Aiishwarya", 
     "email": "aishwaryad3y@gmail.com", 
-    "dp": "", 
+    "dp": "https://media-exp1.licdn.com/dms/image/C4E03AQGANwyUu5z7Fw/profile-displayphoto-shrink_400_400/0/1623052877578?e=1658966400&v=beta&t=K2OpqQiW93z0m5uSu2nHBcVbqkHMwYirn5MorTtmrdQ", 
     "instagram": "https://www.instagram.com/aishcreateshere/"
   }, 
   {
@@ -42,7 +42,7 @@ var allmembers = [
     "linkedin": "linkedin.com/in/pranetipkore", 
     "portfolio": "campsite.bio/sociallypree", 
     "email": "pranetipkore@gmail.com", 
-    "dp": "", 
+    "dp": "https://media-exp1.licdn.com/dms/image/C4D03AQGBMccqYtd3jw/profile-displayphoto-shrink_400_400/0/1652381252107?e=1658966400&v=beta&t=jre1r5SvldfOTqP_pUkm8o2vTd1CJM6ARi8f5L7efdk", 
     "instagram": "#"
   }, 
   {
@@ -53,7 +53,7 @@ var allmembers = [
     "linkedin": "https://www.linkedin.com/in/saloneethakkar/", 
     "portfolio": "https://drive.google.com/drive/folders/1hYkRiI1Jhbp_OzgI_IF6-eFuuKR18ACz?usp=sharing", 
     "email": "thakkarsalonee7@gmail.com", 
-    "dp": "", 
+    "dp": "https://media-exp1.licdn.com/dms/image/C4D03AQHSOh-QEDxVuw/profile-displayphoto-shrink_800_800/0/1619257742982?e=1658966400&v=beta&t=0rixQ8q6kxyXQNZ11TF1D50ZwGCh9_XXvvliTzS6qUU", 
     "instagram": "#"
   }, 
   {
