@@ -141,7 +141,7 @@ var allmembers = [
     "linkedin": "www.linkedin.com/in/mansi-content-writer", 
     "portfolio": "linktr.ee/mansisondhi", 
     "email": "msondhi60@gmail.com", 
-    "dp": "", 
+    "dp": "https://media-exp1.licdn.com/dms/image/C4D03AQHmmhpEsr2ixw/profile-displayphoto-shrink_400_400/0/1629519352208?e=1658966400&v=beta&t=lEIl8oEMYogdkjnBsJUGYpZAeyutMb5rSXPJd0ZnXy0", 
     "instagram": "#"
   }, 
   {
@@ -163,7 +163,7 @@ var allmembers = [
     "linkedin": "https://www.linkedin.com/in/pranjali-goel", 
     "portfolio": "https://linktr.ee/Pranjaligoel", 
     "email": "contentcreatorpranjali@gmail.com", 
-    "dp": "", 
+    "dp": "https://media-exp1.licdn.com/dms/image/C4D03AQFAyig2lYChGQ/profile-displayphoto-shrink_400_400/0/1652709483866?e=1658966400&v=beta&t=q81tnMg4spnIX-EMgDg61J-VgsP4LSvmbtgdlhpoL0w", 
     "instagram": "#"
   }, 
   {
@@ -174,7 +174,7 @@ var allmembers = [
     "linkedin": "linkedin.com/in/shresthshuklaji ", 
     "portfolio": "linktr.ee/theshresthshukla ", 
     "email": "thisisshresth@gmail.com ", 
-    "dp": "", 
+    "dp": "https://media-exp1.licdn.com/dms/image/C4D03AQGn-TyhVjnrwQ/profile-displayphoto-shrink_400_400/0/1652430324939?e=1658966400&v=beta&t=C6FwHR6bI7MfCW1trfWICj8Xp5M5SA-6bOz8S_NwX6U", 
     "instagram": "#"
   },
   {
@@ -185,7 +185,7 @@ var allmembers = [
     "linkedin": "https://www.linkedin.com/in/shikha-sehrawat/", 
     "portfolio": "#", 
     "email": "shikhasehrawat125@gmail.com", 
-    "dp": "", 
+    "dp": "https://media-exp1.licdn.com/dms/image/C5603AQGzp9TP6TWVlA/profile-displayphoto-shrink_400_400/0/1647663734365?e=1658966400&v=beta&t=TRg2OiK6_2t18PjQR1-WiwADX_K7ek4nz5Fgu8CINHo", 
     "instagram": "#"
   },  
 
