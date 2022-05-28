@@ -64,7 +64,7 @@ var allmembers = [
     "linkedin": "https://www.linkedin.com/in/keertika-tiwari-849278206", 
     "portfolio": ". ", 
     "email": "Keertikatiwari45@gmail.com", 
-    "dp": "", 
+    "dp": "https://media-exp1.licdn.com/dms/image/C4D03AQE2yicJapGK5Q/profile-displayphoto-shrink_400_400/0/1649790263219?e=1658966400&v=beta&t=CHvjV0ifs4wWwD7N1n4rssZBgf3m95GcUcxEseQstOE", 
     "instagram": "#"
   }, 
   {
@@ -75,7 +75,7 @@ var allmembers = [
     "linkedin": "https://www.linkedin.com/in/krisha-bhupatani-477626113/", 
     "portfolio": "kafi bada h", 
     "email": "krisha.bhupatani@gmail.com", 
-    "dp": "", 
+    "dp": "https://media-exp1.licdn.com/dms/image/C5603AQFp4nozgVj3MQ/profile-displayphoto-shrink_400_400/0/1623082103949?e=1658966400&v=beta&t=_GypN7P84jQYzKjUEpeuXSzU5QhpNr08HOubbH7JkMk", 
     "instagram": "#"
   }, 
   {
@@ -86,7 +86,7 @@ var allmembers = [
     "linkedin": "https://www.linkedin.com/in/shubham-s-798b2679/", 
     "portfolio": "https://www.marketingmind.in/author/shubham", 
     "email": "shubhamsachdeva16@gmail.com", 
-    "dp": "", 
+    "dp": "https://media-exp1.licdn.com/dms/image/C4D03AQFrpRfPXJeEAA/profile-displayphoto-shrink_400_400/0/1646317946840?e=1658966400&v=beta&t=gkcUN9UEVbkdzpknIj9SnVfvoXBOR3hG-eT9EJjr4Ws", 
     "instagram": "#"
   }, 
   {
@@ -97,7 +97,7 @@ var allmembers = [
     "linkedin": "https://www.linkedin.com/in/hansika-tyagi-b87219219", 
     "portfolio": "https://instagram.com/aryanpreneur?igshid=YmMyMTA2M2Y=", 
     "email": "tyagihansika3@gmail.com", 
-    "dp": "", 
+    "dp": "https://media-exp1.licdn.com/dms/image/C4D03AQEmEbwIiOZ7pg/profile-displayphoto-shrink_400_400/0/1649758396149?e=1658966400&v=beta&t=3ETHK8tymvaojwUJ8X9WfExT-bxQ1ffxDsoC_7QtI98", 
     "instagram": "#"
   }, 
   {
@@ -108,7 +108,7 @@ var allmembers = [
     "linkedin": "https://www.linkedin.com/in/irfanaanjum/", 
     "portfolio": "Tech niche - https://3dprintchamp.com/how-does-3d-printing-work-step-by-step-beginners-guide/", 
     "email": "irfana.anjum.29@gmail.com", 
-    "dp": "", 
+    "dp": "https://media-exp1.licdn.com/dms/image/C4E03AQF1t-DzUXpK3Q/profile-displayphoto-shrink_400_400/0/1620075765869?e=1658966400&v=beta&t=7W916FOnYFF17B6S9M0wopeFajd_ABp4atbeho6FXTU", 
     "instagram": "#"
   }, 
   {
@@ -119,7 +119,7 @@ var allmembers = [
     "linkedin": "https://www.linkedin.com/mwlite/in/siddharth-sharma-writer", 
     "portfolio": "https://linktr.ee/createwithsid", 
     "email": "siddsharma.work@gmail.com", 
-    "dp": "", 
+    "dp": "https://media-exp1.licdn.com/dms/image/D4E03AQF1fxizpPA2CA/profile-displayphoto-shrink_400_400/0/1632736771216?e=1658966400&v=beta&t=RW4wvAe9hypHUr2BHminrrcMaZhAQe5k3-MlAkRvBHM", 
     "instagram": "#"
   }, 
   {
@@ -130,7 +130,7 @@ var allmembers = [
     "linkedin": "https://www.linkedin.com/in/nayonika-mazumdar", 
     "portfolio": "https://drive.google.com/folderview?id=1-9T5vi2jYrtODbAduKDd0TcgrP9d6wfQ", 
     "email": "nittingwordsbynano@gmail.com", 
-    "dp": "", 
+    "dp": "https://media-exp1.licdn.com/dms/image/C5603AQG50r3y6Hngbw/profile-displayphoto-shrink_400_400/0/1642985477316?e=1658966400&v=beta&t=jSEXNudl9J2pyYBXiK6gRHA8QrX0YJ6yjCnCqgMUUb0", 
     "instagram": "#"
   }, 
   {
